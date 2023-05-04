@@ -1,0 +1,175 @@
+title: Arberia Theme
+baseURL: https://arberiatheme.netlify.app/
+relativeURLs: 'True'
+languageCode: en-us
+defaultContentLanguage: en
+theme: arberia
+dateformat: Monday, January 2, 2006
+taxonomies:
+  category: categories
+  tag: tags
+outputs:
+  home:
+    - HTML
+    - JSON
+    - RSS
+    - AMP
+  page: HTML
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+  taxonomyTerm:
+    - HTML
+    - RSS
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
+  tableOfContents:
+    endLevel: 5
+    ordered: no
+    startLevel: 2
+    tocMinWordCount: 100
+permalinks:
+  posts: /:title/
+minify:
+  enableRobotsTXT: yes
+  minifyOutput: yes
+assets:
+  apple_touch_icon: favicon/apple-touch-icon.png
+  favicon: favicon/favicon.ico
+  favicon16x16: favicon/favicon-16x16.png>
+  favicon32x32: favicon/favicon-32x32.png
+  safari_pinned_tab: favicon/safari-pinned-tab.svg
+menu:
+  footer:
+    - name: Privacy Policy
+      url: /policy-privacy
+      weight: 1
+    - name: Contact
+      url: /contact
+      weight: 2
+  main:
+    - identifier: start_here
+      name: Start Here
+      post: ''
+      pre: fa fa-drafting-compass
+      title: ''
+      url: /start-here
+      weight: 2
+    - identifier: view
+      name: View
+      post: ''
+      pre: fa fa-th-large
+      title: ''
+      url: ''
+      weight: 3
+    - identifier: list_view
+      name: List View →
+      params:
+        color: '#ff7e73'
+      parent: view
+      post: Post list view of all posts
+      pre: fa fa-list
+      title: ''
+      url: /posts/
+      weight: 4
+    - identifier: grid_view
+      name: Grid View →
+      params:
+        color: '#abe5b1'
+      parent: view
+      post: Post grid view of all posts
+      pre: fa fa-th
+      title: ''
+      url: /portfolio/
+      weight: 5
+    - identifier: post_view_sidebar
+      name: Single Post View With Sidebar
+      params:
+        color: '#ffc873'
+      parent: view
+      post: Single post view with sidebar
+      pre: fa fa-file-text-o
+      title: ''
+      url: /post-with-sidebar/
+      weight: 6
+    - identifier: post_view_no_sidebar
+      name: Single Post View Without Sidebar
+      params:
+        color: '#ffc873'
+      parent: view
+      post: Single post view without sidebar
+      pre: fa fa-file-text-o
+      title: ''
+      url: /post-without-sidebar/
+      weight: 7
+    - identifier: post_view_cover
+      name: Single Post View with Cover
+      params:
+        color: '#abe0e5'
+      parent: view
+      post: Single post view with cover image
+      pre: fa fa-picture-o
+      title: ''
+      url: /post-with-cover-image/
+      weight: 8
+    - identifier: video_post
+      name: Video Post
+      params:
+        color: '#abe0e5'
+      parent: view
+      post: Single post view of video post
+      pre: fa fa-film
+      title: ''
+      url: /video-post-view/
+      weight: 9
+    - identifier: landinpage
+      name: Landing Page
+      params:
+        bordertop: yes
+        color: ''
+      parent: view
+      post: Insert html on index.md file
+      pre: fa fa-star text-warning
+      title: ''
+      url: /landingpage/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      post: ''
+      pre: ''
+      title: ''
+      url: /contact/
+      weight: 12
+    - identifier: about
+      name: 'About '
+      post: ''
+      pre: ''
+      title: ''
+      url: /about/
+      weight: 13
+footer: {}
+params:
+  social:
+    - icon: fab fa-medium-m
+      link: https://medium.com/@antedoro
+      title: medium
+    - icon: fab fa-facebook-f
+      link: https://www.facebook.com/antedoroguitars
+      title: facebook
+    - icon: fab fa-twitter
+      link: https://twitter.com/AntedoroGuitars
+      title: twitter
+    - icon: fab fa-instagram
+      link: https://www.instagram.com/antedoroguitars/
+      title: instagram
+    - icon: fab fa-pinterest-p
+      link: https://www.pinterest.it/antedoroguitars
+      title: pinterest
+    - icon: fab fa-telegram-plane
+      link: https://telegram.me/antedoroguitars
+      title: telegram
